@@ -1,38 +1,47 @@
 {
   "name": "triangle",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Треугольник Серпинского",
   "private": true,
+  "scripts": {
+    "start": "webpack serve --env port=3000",
+    "build:prod": "webpack --env mod=production",
+    "build:dev": "webpack --env mod=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kokisch/triangle.git"
+  },
+  "author": "Aleksandr Feller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kokisch/triangle/issues"
+  },
+  "homepage": "https://github.com/kokisch/triangle#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.14",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-dev-server": "^4.7.2",
+    "css-loader": "^6.7.2",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "sass": "^1.56.2",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@reduxjs/toolkit": "^1.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.4.5"
   }
 }
